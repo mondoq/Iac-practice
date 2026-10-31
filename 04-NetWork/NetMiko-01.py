@@ -18,4 +18,10 @@ R2={
 }
 
 
+with ConnectHandler(**R1) as net_connect:
+    print(net_connect.send_command('show ip interface brief'))
+
+
+
+
 
