@@ -6,7 +6,7 @@
 
 記事の材料:
   TASK.md   … 課題（「手順」の節は手元の作業メモなので除く）
-  *.tf      … 書いたコード
+  *.tf, *.py … 書いたコード
   NOTE.md   … 自分の一言（任意。空なら節ごと出さない）。```mermaid のコードブロックは図として表示
   terraform graph … 依存関係図（terraform があれば init して実行。失敗したら節ごと出さない）
   git log   … 公開日・更新日・変更履歴
@@ -124,9 +124,9 @@ def task_html(d):
 
 def code_html(d):
     return "".join(
-        f'<figure class="code"><figcaption>{e(tf.name)}</figcaption>'
-        f"<pre><code>{e(read(tf))}</code></pre></figure>"
-        for tf in sorted(d.glob("*.tf"))
+        f'<figure class="code"><figcaption>{e(f.name)}</figcaption>'
+        f"<pre><code>{e(read(f))}</code></pre></figure>"
+        for f in sorted([*d.glob("*.tf"), *d.glob("*.py")])
     )
 
 
