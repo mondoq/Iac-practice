@@ -25,7 +25,7 @@ import markdown
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 OUT = ROOT / "_site"
-REPO = os.environ.get("GITHUB_REPOSITORY", "mondoq/terraform-practice")
+REPO = os.environ.get("GITHUB_REPOSITORY", "mondoq/Iac-practice")
 REPO_URL = f"https://github.com/{REPO}"
 JST = datetime.timezone(datetime.timedelta(hours=9))
 

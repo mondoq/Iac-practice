@@ -1,9 +1,9 @@
 # Terraform 構築練習
 
-[![Terraform CI](https://github.com/mondoq/terraform-practice/actions/workflows/terraform-ci.yml/badge.svg)](https://github.com/mondoq/terraform-practice/actions/workflows/terraform-ci.yml)
-[![Portfolio](https://github.com/mondoq/terraform-practice/actions/workflows/portfolio.yml/badge.svg)](https://mondoq.github.io/terraform-practice/)
+[![Terraform CI](https://github.com/mondoq/Iac-practice/actions/workflows/terraform-ci.yml/badge.svg)](https://github.com/mondoq/Iac-practice/actions/workflows/terraform-ci.yml)
+[![Portfolio](https://github.com/mondoq/Iac-practice/actions/workflows/portfolio.yml/badge.svg)](https://mondoq.github.io/Iac-practice/)
 
-📝 **ポートフォリオ: https://mondoq.github.io/terraform-practice/**
+📝 **ポートフォリオ: https://mondoq.github.io/Iac-practice/**
 保存 → `scripts/autosync.sh` が自動コミット・push → GitHub Actions が記事を生成 → GitHub Pages に公開
 
 自動コミットの登録（最初に1回だけ）:
