@@ -10,7 +10,7 @@
 #   systemctl --user stop autosync      # 一時停止
 set -u
 
-REPO=${1:-$HOME/terraform-practice}
+REPO=${1:-$HOME/Iac-practice}
 INTERVAL=10
 QUIET=5
 SECRET_PATTERN='AKIA[0-9A-Z]{16}|ASIA[0-9A-Z]{16}|aws_secret_access_key[[:space:]]*=|-----BEGIN [A-Z ]*PRIVATE KEY-----|gh[pousr]_[A-Za-z0-9]{36}'

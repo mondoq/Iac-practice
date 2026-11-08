@@ -9,7 +9,7 @@
 自動コミットの登録（最初に1回だけ）:
 ```bash
 mkdir -p ~/.config/systemd/user
-ln -sf ~/terraform-practice/scripts/autosync.service ~/.config/systemd/user/
+ln -sf ~/Iac-practice/scripts/autosync.service ~/.config/systemd/user/
 systemctl --user daemon-reload
 systemctl --user enable --now autosync
 ```
@@ -31,7 +31,7 @@ systemctl --user enable --now autosync
 ## 01: Docker で基本サイクル
 
 ```bash
-cd ~/terraform-practice/01-docker-basics
+cd ~/Iac-practice/01-docker-basics
 terraform init        # プロバイダ（プラグイン）を .terraform/ にダウンロード
 terraform plan        # 「何が作られるか」の差分を表示。+ は作成
 terraform apply       # yes で実行
@@ -73,7 +73,7 @@ terraform state list  # Terraform が「自分が管理している」と記録�
 3. 念のため **AWS Budgets で月 1 USD のアラート** を設定
 
 ```bash
-cd ~/terraform-practice/02-aws-vpc
+cd ~/Iac-practice/02-aws-vpc
 terraform init
 terraform plan  -var "my_ip_cidr=$(curl -s https://checkip.amazonaws.com)/32"
 terraform apply -var "my_ip_cidr=$(curl -s https://checkip.amazonaws.com)/32"
