@@ -41,15 +41,8 @@ with ConnectHandler(**cisco_switch)as connect:
 
     config_output = connect.send_command("show vlan brief")
     print("\n===確認コマンド(show vlan brief)===")
-    print(show_output)
+    print(config_output)
 
     connect.save_config()
-
-
-
-
-
-
-
 
 
