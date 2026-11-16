@@ -80,4 +80,4 @@ def build_single_village():
 
 
 if __name__=="__main__":
-    print (build_single_village())
+    build_single_village()
