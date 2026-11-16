@@ -61,4 +61,23 @@ def build_single_village():
             print("設定を保存しました")
 
 #構築後の状態確認
-            print("")
+            print("vlan 10の確認")
+
+            status_vlan=connect.send_command("show ip interface brief |include vlan 10")
+            print(status_vlan)
+
+            print("DHCPのステータス確認")
+
+            dhcp=connect.send_command("show ip dhcp binding",use_textfsm=True)
+            print(json.dump(dhcp,index=2,ensure_ascii=False))
+
+            print("マックテーブル確認")
+
+            mac_table=connect.send_config("show mac address-table vlan 10",use_textfsm=True)
+            print(json.dump(mac_table,index=2,ensure_ascii=False))
+    except(NetmikoTimeoutException, NetmikoAuthenticationException) as e:
+        print(f"スイッチへの接続に失敗しました",{e})
+
+
+if __name__=="__main__":
+    print (build_single_village())
