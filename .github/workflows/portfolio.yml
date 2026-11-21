@@ -54,7 +54,7 @@ jobs:
       # 公開できたら Gmail に通知する（失敗時の通知は GitHub 標準のメールに任せる）
       - name: 公開完了を Gmail で通知
         if: env.GMAIL_USER != ''
-        uses: dawidd6/action-send-mail@v23
+        uses: dawidd6/action-send-mail@v24
         with:
           server_address: smtp.gmail.com
           server_port: 465
