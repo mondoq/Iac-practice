@@ -11,7 +11,7 @@ sw1={
 
 
 pc_assignments=[
-{"port":"FastEthernet0/1","pc_name":"PC1","ip":"192.168.10.11","vlan":1}
+{"port":"FastEthernet0/1","pc_name":"PC1","ip":"192.168.10.11","vlan":1},
 {"port":"FastEthernet0/2","pc_name":"PC2","ip":"192.168.10.12","vlan":2},
 {"port":"FastEthernet0/3","pc_name":"PC3","ip":"192.168.10.13","vlan":3},
 {"port":"FastEthernet0/4","pc_name":"PC4","ip":"192.168.10.14","vlan":4},
